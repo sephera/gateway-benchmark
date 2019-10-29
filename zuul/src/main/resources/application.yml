@@ -1,0 +1,9 @@
+zuul:
+  routes:
+    static:
+      path: /**
+      url: http://localhost:9000/
+  trace-request-body: true
+  include-debug-header: true
+server:
+  port: 9200

@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: static_resource
+          uri: http://localhost:9000
+          predicates:
+            - Path=/**
+          filters:
+server:
+  port: 9100
