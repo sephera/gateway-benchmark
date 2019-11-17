@@ -4,20 +4,30 @@ This is simple test for benchmark current stage of gateway
 
 ## Module
 
+### resource server
+
+Simple Http server write with Go
+
+Port: 9000
+
 ### gateway
 
 Demo module use spring cloud gateway
+
 Port: 9100
 
 ### zuul
 
 Demo module use Zuul 1 proxy
+
 Port: 9200
 
-### resource server
 
-Simple Http server write with Go
-Port: 9000
+### zuul 2
+
+Demo module use Zuul 2 proxy
+
+Port: 9300
 
 ## Install benchmarking tool
 
@@ -75,3 +85,5 @@ Transfer/sec:      1.38MB
   Socket errors: connect 0, read 0, write 0, timeout 346
 Requests/sec:   2811.38
 Transfer/sec:    684.06KB
+
+### Zuul 2
